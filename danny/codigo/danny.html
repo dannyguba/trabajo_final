@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	 <link rel="stylesheet" href="estilo.css">
+	<title>Document</title>
+</head>
+<body>
+	<div id="m">
+	<h1> Moto :	 </h1>
+	<input type="button" value="Ver consumo de gasolina" onclick="moto(s.value)">	
+
+	<input id="s" type="range" min="0" max="100" value="0" step="10"
+	onchange="sliderChange(this.value)"/>
+	<br>
+	<p>Recorrido = <span id="moto">0</span>km</p>
+	<img id="m1" style="display: block;" src="moto1.jpg" alt="">
+	<img id="m2" style="display: none;" src="moto2.jpg" alt="">
+	<img id="m3" style="display: none;" src="moto3.jpg" alt="">
+	<p id="valorm"></p><p>Galones por km recorrido</p>
+	</div>
+
+<div id="c">
+	<h1>Carro :</h1>
+	<input type="button" value="Ver consumo de gasolina" onclick="carro(ss.value)">
+		<input id="ss" type="range" min="0" max="100" value="0" step="10"
+	onchange="sliderChang(this.value)"/>
+	<br>
+	<p>Recorrido = <span id="carro">0</span>km</p>
+	<img id="c1" style="display: block;" src="carro1.jpg" alt="">
+	<img id="c2" style="display: none;" src="carro2.jpg" alt="">
+	<img id="c3" style="display: none;" src="carro3.jpg" alt="">
+	<p id="valorc"></p><p>Galones por km recorrido</p>
+</div>
+	<script src="codigoo.js"></script>
+</body>
+</html>
